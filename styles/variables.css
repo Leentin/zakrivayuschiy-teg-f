@@ -1,1 +1,12 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  --heading-weight-light-text: 700;
+  --heading-weight-dark-text: 785;
+  --content-weight-light-text: 400;
+  --content-weight-dark-text: 465;
+  --accent-font: PressStar2P;
+  --content-font: Inter-Variable;
+  --bg-color-main: #fff;
+  --text-color: #000;
+}

@@ -17,4 +17,10 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  margin: 0 auto;
+  font-family: var(--content-font), sans-serif;
+  background-attachment: fixed;
+
+  height: 100vh;
+  background-size: cover;
 }
