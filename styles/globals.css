@@ -51,3 +51,10 @@ ol {
   clip-path: inset(50%);
   white-space: nowrap;
 }
+
+button {
+  background: transparent;
+  border: 0;
+  font-size: 14px;
+  line-height: 14px;
+}
