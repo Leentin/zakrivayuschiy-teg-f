@@ -5,7 +5,6 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 
-
 :root.theme-light {
   --bg-color-main: #fff;
   --text-color: #000;
@@ -18,7 +17,7 @@
 .theme-light .page {
   background-image: repeating-linear-gradient(90deg, transparent, #d3d3d3 2px),
     linear-gradient(#e7e7e7 0.01%, #1a1a1a);
- 
+  background-size: cover;
 }
 
 @media (prefers-color-scheme: light) {
@@ -32,8 +31,12 @@
   }
 
   .page {
-    background-image: repeating-linear-gradient(90deg, transparent, #d3d3d3 2px),
-      linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+    background-image: repeating-linear-gradient(
+        #d3d3d3 2px,
+        90deg,
+        transparent 2px
+      ),
+      linear-gradient(#e7e7e7, #1a1a1a);
   }
 }
 
@@ -44,10 +47,11 @@
   --text-stroke: #00cc14;
   color: var(--text-color);
   background-color: var(--bg-color-main);
+  background-size: cover;
 }
 
 .theme-dark .page {
-  background-image: repeating-linear-gradient(90deg, transparent, #000 2px),
+  background-image: repeating-linear-gradient(#000 2px, 90deg, transparent),
     linear-gradient(#007f0c 0.01%, #004306);
 }
 
@@ -55,8 +59,8 @@
   :root {
     --text-color: #00cc14;
     --bg-color-main: #000;
-    --button-bg: #00cc14
-    --text-stroke: #00cc14;;
+    --button-bg: #00cc14;
+    --text-stroke: #00cc14;
     color: var(--text-color);
     background-color: var(--bg-color-main);
   }

@@ -25,24 +25,6 @@
   }
 }
 
-@keyframes button {
-  from {
-    box-shadow: 0 0 0 0 transparent;
-  }
-  to {
-    box-shadow: 2px 2px 0 0 var(--text-color);
-  }
-}
-
-@keyframes hover {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0.6;
-  }
-}
-
 @keyframes heart {
   0% {
     scale: 1;
