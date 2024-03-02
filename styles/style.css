@@ -155,9 +155,10 @@
 
 .card__image {
   width: 100%;
-  object-fit: contain;
-  object-position: center;
+  object-fit: cover;
+  /* object-position: center; */
   outline: 1px solid var(--text-color);
+  aspect-ratio: 1 / 1;
 }
 
 .card__text {
@@ -201,7 +202,7 @@
   display: flex;
   flex-direction: row;
   justify-content: end;
-  gap: 0 12px;
+  gap: 0 10px;
 }
 
 .button__text {
@@ -252,10 +253,10 @@
 }
 
 .card__like-button {
-  width: 36px;
-  height: 39px;
   margin: 0;
   padding: 0;
+  height: 100%;
+  transform-origin: center;
 }
 
 .card__like-button:focus {
