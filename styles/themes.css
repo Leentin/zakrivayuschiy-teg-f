@@ -12,11 +12,19 @@
   --text-stroke: #ffffff;
   color: var(--text-color);
   background-color: var(--bg-color-main);
+  --heading-weight-text: 700;
+  --content-weight-text: 400;
 }
 
 .theme-light .page {
-  background-image: repeating-linear-gradient(90deg, transparent, #d3d3d3 2px),
-    linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+  background-image: repeating-linear-gradient(
+      90deg,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(180deg, #d3d3d3, #d3d3d3 2px, transparent 2px 4px),
+    linear-gradient(#e7e7e7, #1a1a1a);
   background-size: cover;
 }
 
@@ -26,15 +34,24 @@
     --text-color: #000;
     --button-bg: #ffffff;
     --text-stroke: #ffffff;
+    --heading-weight-text: 700;
+    --content-weight-text: 400;
     color: var(--text-color);
     background-color: var(--bg-color-main);
   }
 
   .page {
     background-image: repeating-linear-gradient(
-        #d3d3d3 2px,
         90deg,
-        transparent 2px
+        #d3d3d3,
+        #d3d3d3 2px,
+        transparent 2px 4px
+      ),
+      repeating-linear-gradient(
+        180deg,
+        #d3d3d3,
+        #d3d3d3 2px,
+        transparent 2px 4px
       ),
       linear-gradient(#e7e7e7, #1a1a1a);
   }
@@ -45,14 +62,22 @@
   --button-bg: #00cc14;
   --bg-color-main: #000;
   --text-stroke: #00cc14;
+  --heading-weight-text: 785;
+  --content-weight-text: 465;
   color: var(--text-color);
   background-color: var(--bg-color-main);
   background-size: cover;
 }
 
 .theme-dark .page {
-  background-image: repeating-linear-gradient(#000 2px, 90deg, transparent),
-    linear-gradient(#007f0c 0.01%, #004306);
+  background-image: repeating-linear-gradient(
+      90deg,
+      #000,
+      #000 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(180deg, #000, #000 2px, transparent 2px 4px),
+    linear-gradient(#007f0c, #004306);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -61,14 +86,20 @@
     --bg-color-main: #000;
     --button-bg: #00cc14;
     --text-stroke: #00cc14;
+    --heading-weight-text: 785;
+    --content-weight-text: 465;
     color: var(--text-color);
     background-color: var(--bg-color-main);
   }
 
   .page {
-    background-image: repeating-linear-gradient(90deg, transparent, #000 2px),
-      linear-gradient(#007f0c 0.01%, #004306);
-    /* background-attachment: fixed;
-    background-size: cover; */
+    background-image: repeating-linear-gradient(
+        90deg,
+        #000,
+        #000 2px,
+        transparent 2px 4px
+      ),
+      repeating-linear-gradient(180deg, #000, #000 2px, transparent 2px 4px),
+      linear-gradient(#007f0c, #004306);
   }
 }

@@ -12,6 +12,17 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+.core {
+  fill: transparent;
+}
+
+.main-body {
+  fill: transparent;
+}
+
+.sparks {
+  opacity: 0;
+}
 
 @keyframes choice {
   0% {
